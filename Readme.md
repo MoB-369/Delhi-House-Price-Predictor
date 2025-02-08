@@ -1,7 +1,5 @@
-https://delhi-house-price-predictor-ifmaadydpsrkbafskjliof.streamlit.app/
----
-
 ## 🏠 Delhi House Price Prediction  
+https://delhi-house-price-predictor-ifmaadydpsrkbafskjliof.streamlit.app/
 
 ### 📌 **Project Overview**  
 This project predicts house prices in **Delhi** using **machine learning models**. It includes:  
