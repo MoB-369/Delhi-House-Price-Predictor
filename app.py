@@ -9,7 +9,7 @@ app = Flask(__name__)
 def home():
     return jsonify({"message": "Flask API is running!"})
 
-@app.route("/predict", methods=["POST","GET"])
+@app.route("/predict", methods=["POST"])
 def predict():
     try:
         # Get input data from request
