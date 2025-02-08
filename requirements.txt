@@ -9,5 +9,6 @@ Flask
 dill
 streamlit
 requests
+gunicorn
 
 # -e .
