@@ -1,9 +1,11 @@
 from flask import Flask, request, jsonify
 import numpy as np
+from flask_cors import CORS
 import pandas as pd
 from src.pipeline.predict_pipeline import CustomData, PredictPipeline
 
 app = Flask(__name__)
+CORS(app) 
 
 @app.route("/")
 def home():
