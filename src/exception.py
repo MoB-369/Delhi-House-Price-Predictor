@@ -1,5 +1,5 @@
 '''
-This file implements the custom exceptio handling code.
+This file implements the custom exception handling code.
 For this we use sys library as it provides us error details.
 
 First we have implemented an error_message_detail() function.
@@ -13,7 +13,7 @@ Then we have our CustomException class.
 import sys
 from src.logger import logging
 def error_message_detail(error,error_detail:sys):
-    _,_,exc_tb=error_detail.exec_info()
+    _,_,exc_tb=error_detail.exc_info()
     file_name = exc_tb.tb_frame.f_code.co_filename
     error_message="Error occured in python script name [{0}] line number [{1}] error message[{2}]".format(
         file_name,exc_tb.tb_lineno,str(error)
