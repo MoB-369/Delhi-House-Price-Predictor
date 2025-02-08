@@ -12,6 +12,9 @@ def home():
 @app.route("/predict", methods=["POST"])
 def predict():
     try:
+        # Ensure it's a POST request
+        if request.method != "POST":
+            return jsonify({"error": "Only POST method is allowed"})
         # Get input data from request
         data = request.json  
 
