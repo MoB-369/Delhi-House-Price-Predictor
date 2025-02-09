@@ -173,5 +173,3 @@ cython_debug/
 
 notes.md
 logs/
-Dockerfile
-docker-compose.yml
