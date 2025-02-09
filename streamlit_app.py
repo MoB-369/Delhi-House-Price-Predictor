@@ -35,7 +35,7 @@ furnished_un = st.checkbox("Unfurnished", key="furnished_un", on_change=update_u
 
 # Prediction Button
 if st.button("Predict Price"):
-    api_url = "https://delhi-house-price-predictor-vaof.onrender.com/predict"
+    api_url = "https://delhi-house-price-predictor-1.onrender.com/predict"
     
     # Prepare request data
     data = {
