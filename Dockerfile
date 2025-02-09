@@ -4,8 +4,13 @@ FROM python:3.8
 # Set working directory
 WORKDIR /app
 
+# Copy the .env file
+COPY .env .env
+
 # Copy all files to container
 COPY . .
+
+
 
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt

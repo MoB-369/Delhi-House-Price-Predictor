@@ -3,6 +3,8 @@ version: '3.8'
 services:
   backend:
     build: .
+    env_file:
+      - .env  # Loads variables from .env
     ports:
       - "5000:5000"
     command: gunicorn app:app --bind 0.0.0.0:5000

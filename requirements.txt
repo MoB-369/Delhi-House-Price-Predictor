@@ -11,5 +11,6 @@ streamlit
 requests
 gunicorn
 flask_cors
+python-dotenv
 
 # -e .

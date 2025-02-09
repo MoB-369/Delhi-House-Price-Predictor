@@ -1,5 +1,6 @@
 import streamlit as st
 import requests
+import os
 
 st.title("🏠 Delhi House Price Predictor")
 st.markdown("Enter house details to get the predicted price:")
@@ -35,7 +36,7 @@ furnished_un = st.checkbox("Unfurnished", key="furnished_un", on_change=update_u
 
 # Prediction Button
 if st.button("Predict Price"):
-    api_url = "https://delhi-house-price-predictor-1.onrender.com/predict"
+    api_url = os.getenv("FLASK_ENV")
     
     # Prepare request data
     data = {
