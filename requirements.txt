@@ -10,5 +10,6 @@ dill
 streamlit
 requests
 gunicorn
+flask_cors
 
 # -e .
